@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mustafa Ada | Kişisel Web Sitesi</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    >
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f9fafb;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #030303, #070707);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .profile-glow {
+            box-shadow:
+                0 0 40px rgba(37, 99, 235, 0.15),
+                0 20px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        /* NAVBAR */
+
+        #navbar {
+            transition: all 0.3s ease;
+        }
+
+        /* MOBİL MENÜ */
+
+        #mobile-menu {
+            transition: all 0.3s ease;
+        }
+
+    </style>
+
+</head>
+
+
+<body class="text-gray-800 antialiased flex flex-col min-h-screen">
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <nav
+        id="navbar"
+        class="bg-white/90 backdrop-blur-md fixed w-full z-50 top-0 border-b border-gray-100 shadow-sm"
+    >
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- MENÜ ORTADA -->
+
+            <div class="flex justify-center h-20 items-center">
+
+                <!-- DESKTOP MENU -->
+
+                <div class="hidden md:flex items-center justify-center gap-6 lg:gap-8">
+
+                    <a
+                        href="#home"
+                        class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-semibold transition-colors"
+                    >
+                        Anasayfa
+                    </a>
+
+                    <a
+                        href="#about"
+                        class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-semibold transition-colors"
+                    >
+                        Hakkımda
+                    </a>
+
+                    <a
+                        href="#contact"
+                        class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-semibold transition-colors"
+                    >
+                        İletişim
+                    </a>
+
+                    <a
+                        href="#social"
+                        class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-semibold transition-colors"
+                    >
+                        Sosyal Medya
+                    </a>
+
+                    <a
+                        href="#contact"
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                    >
+                        Bana Ulaşın
+                    </a>
+
+                </div>
+
+
+                <!-- MOBILE BUTTON -->
+
+                <div class="md:hidden flex items-center">
+
+                    <button
+                        id="mobile-menu-btn"
+                        type="button"
+                        class="text-gray-600 hover:text-gray-900 focus:outline-none p-2"
+                        aria-label="Menüyü aç"
+                    >
+
+                        <i class="fas fa-bars text-2xl"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOBILE MENU -->
+
+        <div
+            id="mobile-menu"
+            class="md:hidden hidden bg-white border-b border-gray-100 absolute w-full left-0 top-20 shadow-lg"
+        >
+
+            <div class="px-4 pt-3 pb-6 space-y-2 flex flex-col">
+
+                <a
+                    href="#home"
+                    class="mobile-link text-gray-700 hover:bg-blue-50 hover:text-blue-600 block px-4 py-3 rounded-xl text-base font-medium text-center"
+                >
+                    Anasayfa
+                </a>
+
+                <a
+                    href="#about"
+                    class="mobile-link text-gray-700 hover:bg-blue-50 hover:text-blue-600 block px-4 py-3 rounded-xl text-base font-medium text-center"
+                >
+                    Hakkımda
+                </a>
+
+                <a
+                    href="#contact"
+                    class="mobile-link text-gray-700 hover:bg-blue-50 hover:text-blue-600 block px-4 py-3 rounded-xl text-base font-medium text-center"
+                >
+                    İletişim
+                </a>
+
+                <a
+                    href="#social"
+                    class="mobile-link text-gray-700 hover:bg-blue-50 hover:text-blue-600 block px-4 py-3 rounded-xl text-base font-medium text-center"
+                >
+                    Sosyal Medya
+                </a>
+
+                <a
+                    href="#contact"
+                    class="mobile-link bg-blue-600 text-white hover:bg-blue-700 block px-4 py-3 rounded-xl text-base font-semibold text-center"
+                >
+                    Bana Ulaşın
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section
+        id="home"
+        class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex-grow flex items-center bg-white"
+    >
+
+        <!-- ARKA PLAN -->
+
+        <div
+            class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-50 blur-3xl opacity-60 pointer-events-none"
+        ></div>
+
+        <div
+            class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-indigo-50 blur-3xl opacity-60 pointer-events-none"
+        ></div>
+
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full"
+        >
+
+            <div
+                class="flex flex-col-reverse md:flex-row items-center justify-between gap-12"
+            >
+
+
+                <!-- YAZI -->
+
+                <div class="w-full md:w-1/2 text-center md:text-left">
+
+                    <span
+                        class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold tracking-wide mb-6 border border-blue-200 shadow-sm"
+                    >
+                        Hoş Geldiniz 👋
+                    </span>
+
+
+                    <h1
+                        class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-6"
+                    >
+
+                        Merhaba, Ben
+
+                        <span class="gradient-text">
+                            Mustafa Ada
+                        </span>
+
+                    </h1>
+
+
+                    <p
+                        class="mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl font-light mb-10"
+                    >
+
+                        Kişisel web siteme hoş geldiniz.
+                        Burada hakkımda bilgi edinebilir,
+                        sosyal medya hesaplarıma ulaşabilir
+                        ve benimle iletişime geçebilirsiniz.
+
+                    </p>
+
+
+                    <div
+                        class="mt-5 sm:flex sm:justify-center md:justify-start gap-4"
+                    >
+
+                        <a
+                            href="#contact"
+                            class="w-full sm:w-auto flex items-center justify-center px-8 py-3.5 text-base font-medium rounded-full text-white bg-blue-600 hover:bg-blue-700 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+                        >
+
+                            <i class="fas fa-envelope mr-2"></i>
+
+                            Benimle İletişime Geçin
+
+                        </a>
+
+
+                        <a
+                            href="#about"
+                            class="mt-4 sm:mt-0 w-full sm:w-auto flex items-center justify-center px-8 py-3.5 border border-gray-300 text-base font-medium rounded-full text-gray-700 bg-white hover:bg-gray-50 shadow-sm hover:shadow-md transition-all"
+                        >
+
+                            Hakkımda
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROFİL FOTOĞRAFI -->
+
+                <div
+                    class="w-full md:w-1/2 flex justify-center mb-10 md:mb-0"
+                >
+
+                    <div
+                        class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-gradient-to-tr from-blue-100 to-indigo-50 profile-glow transition-transform hover:scale-105 duration-300"
+                    >
+
+                        <img
+                            src="./749041845_18054580019552041_6578895534097710693_n.jpg"
+                            alt="Mustafa Ada profil fotoğrafı"
+                            class="w-full h-full object-cover rounded-full border-4 border-white shadow-inner"
+                        >
+
+
+                        <div
+                            class="absolute bottom-4 right-4 bg-white w-14 h-14 rounded-full shadow-lg text-2xl flex items-center justify-center border border-gray-100"
+                        >
+                            👋
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         HAKKIMDA
+    ====================================================== -->
+
+    <section id="about" class="py-20 bg-gray-50">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+            <div class="text-center mb-16">
+
+                <h2
+                    class="text-3xl font-extrabold text-gray-900 sm:text-4xl"
+                >
+                    Hakkımda
+                </h2>
+
+                <div
+                    class="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"
+                ></div>
+
+            </div>
+
+
+            <div
+                class="flex flex-col md:flex-row items-center gap-12"
+            >
+
+
+                <!-- FOTOĞRAF -->
+
+                <div
+                    class="w-full md:w-5/12 flex justify-center"
+                >
+
+                    <div
+                        class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-white shadow-xl transition-transform hover:scale-105 duration-300"
+                    >
+
+                        <img
+                            src="./749041845_18054580019552041_6578895534097710693_n.jpg"
+                            alt="Mustafa Ada profil fotoğrafı"
+                            class="w-full h-full object-cover rounded-full border-4 border-gray-50"
+                        >
+
+                        <div
+                            class="absolute bottom-4 right-4 bg-white p-3 rounded-full shadow-lg text-blue-600 flex items-center justify-center"
+                        >
+
+                            <i class="fas fa-code text-2xl"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- YAZI -->
+
+                <div
+                    class="w-full md:w-7/12 text-center md:text-left"
+                >
+
+                    <h3
+                        class="text-2xl font-bold text-gray-900 mb-4"
+                    >
+                        Mustafa Ada
+                    </h3>
+
+
+                    <p
+                        class="text-gray-600 mb-6 leading-relaxed"
+                    >
+                        Merhaba! Ben Mustafa Ada.
+                        Teknoloji, bilgisayarlar, web tasarımı
+                        ve dijital dünyayla ilgileniyorum.
+                    </p>
+
+
+                    <p
+                        class="text-gray-600 mb-8 leading-relaxed"
+                    >
+                        Kendimi geliştirmeyi, yeni şeyler öğrenmeyi
+                        ve farklı projeler üzerinde çalışmayı seviyorum.
+                        Bu web sitesi de kendimi ve çalışmalarımı
+                        dijital ortamda tanıtmak için oluşturuldu.
+                    </p>
+
+
+                    <!-- BİLGİ KARTLARI -->
+
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left"
+                    >
+
+                        <div
+                            class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100"
+                        >
+
+                            <i
+                                class="fas fa-user text-blue-600 text-2xl mb-3"
+                            ></i>
+
+                            <h4 class="font-bold text-gray-900">
+                                İsim
+                            </h4>
+
+                            <p class="text-sm text-gray-500 mt-1">
+                                Mustafa Ada
+                            </p>
+
+                        </div>
+
+
+                        <div
+                            class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100"
+                        >
+
+                            <i
+                                class="fas fa-birthday-cake text-blue-600 text-2xl mb-3"
+                            ></i>
+
+                            <h4 class="font-bold text-gray-900">
+                                Yaş
+                            </h4>
+
+                            <p class="text-sm text-gray-500 mt-1">
+                                18
+                            </p>
+
+                        </div>
+
+
+                        <div
+                            class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100"
+                        >
+
+                            <i
+                                class="fas fa-laptop-code text-blue-600 text-2xl mb-3"
+                            ></i>
+
+                            <h4 class="font-bold text-gray-900">
+                                İlgi Alanları
+                            </h4>
+
+                            <p class="text-sm text-gray-500 mt-1">
+                                Teknoloji &amp; Web
+                            </p>
+
+                        </div>
+
+
+                        <div
+                            class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100"
+                        >
+
+                            <i
+                                class="fas fa-mobile-alt text-blue-600 text-2xl mb-3"
+                            ></i>
+
+                            <h4 class="font-bold text-gray-900">
+                                Mobil Uyumlu
+                            </h4>
+
+                            <p class="text-sm text-gray-500 mt-1">
+                                Tüm cihazlarda çalışır
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SOSYAL MEDYA
+    ====================================================== -->
+
+    <section id="social" class="py-20 bg-white">
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+            <div class="text-center mb-12">
+
+                <h2
+                    class="text-3xl font-extrabold text-gray-900 sm:text-4xl"
+                >
+                    Sosyal Medyalarım
+                </h2>
+
+                <div
+                    class="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"
+                ></div>
+
+                <p class="mt-4 text-gray-500">
+                    Beni sosyal medya hesaplarımdan takip edebilirsiniz.
+                </p>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    href="https://www.instagram.com/mustafaadaa58/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                    class="group bg-gradient-to-br from-pink-500 via-purple-500 to-orange-400 p-8 rounded-3xl text-white shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
+                >
+
+                    <div class="flex items-center gap-5">
+
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center"
+                        >
+
+                            <i class="fab fa-instagram text-4xl"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3 class="text-xl font-bold">
+                                Instagram
+                            </h3>
+
+                            <p class="text-white/80 text-sm">
+                                @mustafaadaa58
+                            </p>
+
+                        </div>
+
+
+                        <i
+                            class="fas fa-arrow-up-right-from-square ml-auto opacity-70 group-hover:opacity-100"
+                        ></i>
+
+                    </div>
+
+                </a>
+
+
+                <!-- SPOTIFY -->
+
+                <a
+                    href="https://open.spotify.com/user/31wfpk4ygruuu3qampdz6wozn4ze?si=6564834f5aa64306"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Spotify"
+                    class="group bg-gradient-to-br from-green-500 to-green-700 p-8 rounded-3xl text-white shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
+                >
+
+                    <div class="flex items-center gap-5">
+
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center"
+                        >
+
+                            <i class="fab fa-spotify text-4xl"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3 class="text-xl font-bold">
+                                Spotify
+                            </h3>
+
+                            <p class="text-white/80 text-sm">
+                                Spotify Profilim
+                            </p>
+
+                        </div>
+
+
+                        <i
+                            class="fas fa-arrow-up-right-from-square ml-auto opacity-70 group-hover:opacity-100"
+                        ></i>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         İLETİŞİM
+    ====================================================== -->
+
+    <section id="contact" class="py-20 bg-gray-50">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+            <div class="text-center mb-16">
+
+                <h2
+                    class="text-3xl font-extrabold text-gray-900 sm:text-4xl"
+                >
+                    İletişime Geçin
+                </h2>
+
+                <div
+                    class="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"
+                ></div>
+
+                <p class="mt-4 text-gray-500 max-w-2xl mx-auto">
+                    Bana mesaj göndermek için aşağıdaki iletişim
+                    bilgilerini kullanabilirsiniz.
+                </p>
+
+            </div>
+
+
+            <div
+                class="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 flex flex-col md:flex-row"
+            >
+
+
+                <!-- İLETİŞİM BİLGİLERİ -->
+
+                <div
+                    class="w-full md:w-2/5 bg-gradient-to-br from-blue-600 to-indigo-700 p-10 text-white flex flex-col justify-between"
+                >
+
+                    <div>
+
+                        <h3 class="text-2xl font-bold mb-6">
+                            İletişim Bilgileri
+                        </h3>
+
+                        <p class="text-blue-100 mb-8 text-sm">
+                            Bana aşağıdaki iletişim bilgilerinden
+                            ulaşabilirsiniz.
+                        </p>
+
+
+                        <div class="space-y-6">
+
+
+                            <!-- KONUM -->
+
+                            <div class="flex items-start">
+
+                                <i
+                                    class="fas fa-map-marker-alt mt-1 mr-4 text-blue-200"
+                                ></i>
+
+                                <div>
+
+                                    <h4 class="font-semibold">
+                                        Konum
+                                    </h4>
+
+                                    <p class="text-sm text-blue-100">
+                                        İstanbul / Pendik
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- EMAIL -->
+
+                            <div class="flex items-start">
+
+                                <i
+                                    class="fas fa-envelope mt-1 mr-4 text-blue-200"
+                                ></i>
+
+                                <div>
+
+                                    <h4 class="font-semibold">
+                                        E-posta
+                                    </h4>
+
+                                    <a
+                                        href="mailto:mustafaada3458@gmail.com"
+                                        class="text-sm text-blue-100 hover:text-white transition-colors"
+                                    >
+                                        mustafaada3458@gmail.com
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SOSYAL -->
+
+                    <div class="mt-12">
+
+                        <h4
+                            class="font-semibold mb-4 text-sm uppercase tracking-wider text-blue-200"
+                        >
+                            Sosyal Medya
+                        </h4>
+
+
+                        <div class="flex space-x-4">
+
+
+                            <a
+                                href="https://www.instagram.com/mustafaadaa58/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram"
+                                class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                            >
+
+                                <i
+                                    class="fab fa-instagram text-white text-lg"
+                                ></i>
+
+                            </a>
+
+
+                            <a
+                                href="https://open.spotify.com/user/31wfpk4ygruuu3qampdz6wozn4ze?si=6564834f5aa64306"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Spotify"
+                                class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                            >
+
+                                <i
+                                    class="fab fa-spotify text-white text-lg"
+                                ></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORM -->
+
+                <div class="w-full md:w-3/5 p-10">
+
+                    <form
+                        id="contact-form"
+                        class="space-y-6"
+                    >
+
+
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 gap-6"
+                        >
+
+
+                            <!-- İSİM -->
+
+                            <div>
+
+                                <label
+                                    for="name"
+                                    class="block text-sm font-medium text-gray-700 mb-2"
+                                >
+                                    Adınız Soyadınız
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow bg-gray-50 focus:bg-white"
+                                    placeholder="Adınız Soyadınız"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- EMAIL -->
+
+                            <div>
+
+                                <label
+                                    for="email"
+                                    class="block text-sm font-medium text-gray-700 mb-2"
+                                >
+                                    E-posta Adresiniz
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow bg-gray-50 focus:bg-white"
+                                    placeholder="ornek@email.com"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- KONU -->
+
+                        <div>
+
+                            <label
+                                for="subject"
+                                class="block text-sm font-medium text-gray-700 mb-2"
+                            >
+                                Konu
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow bg-gray-50 focus:bg-white"
+                                placeholder="Mesaj konusu"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- MESAJ -->
+
+                        <div>
+
+                            <label
+                                for="message"
+                                class="block text-sm font-medium text-gray-700 mb-2"
+                            >
+                                Mesajınız
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow resize-none bg-gray-50 focus:bg-white"
+                                placeholder="Mesajınızı yazın..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- GÖNDER -->
+
+                        <div>
+
+                            <button
+                                type="submit"
+                                class="w-full sm:w-auto flex justify-center py-3.5 px-8 rounded-full shadow-md text-base font-semibold text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+                            >
+
+                                <i class="fas fa-paper-plane mr-2"></i>
+
+                                Mesaj Gönder
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- BAŞARI -->
+
+                        <div
+                            id="success-message"
+                            class="hidden mt-4 p-4 rounded-xl bg-green-50 text-green-700 border border-green-200 text-sm items-center"
+                        >
+
+                            <i
+                                class="fas fa-check-circle mr-2 text-green-500 text-lg"
+                            ></i>
+
+                            Mesajınız hazırlandı. E-posta uygulamanız açılıyor.
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer
+        class="bg-gray-900 py-10 mt-auto"
+    >
+
+        <!-- HER ŞEY ORTADA -->
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center"
+        >
+
+            <!-- COPYRIGHT -->
+
+            <div
+                class="text-gray-400 text-sm mb-5"
+            >
+
+                &copy;
+
+                <span id="year"></span>
+
+                Mustafa Ada
+
+                Tüm Hakları Saklıdır.
+
+            </div>
+
+
+            <!-- SOSYAL MEDYA -->
+
+            <div
+                class="flex items-center justify-center space-x-6"
+            >
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    href="https://www.instagram.com/mustafaadaa58/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                    class="text-gray-400 hover:text-white transition-colors text-2xl"
+                >
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+
+                <!-- SPOTIFY -->
+
+                <a
+                    href="https://open.spotify.com/user/31wfpk4ygruuu3qampdz6wozn4ze?si=6564834f5aa64306"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Spotify"
+                    class="text-gray-400 hover:text-white transition-colors text-2xl"
+                >
+
+                    <i class="fab fa-spotify"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        /* YIL */
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+
+        /* MOBİL MENÜ */
+
+        const btn =
+            document.getElementById("mobile-menu-btn");
+
+        const menu =
+            document.getElementById("mobile-menu");
+
+        const mobileLinks =
+            document.querySelectorAll(".mobile-link");
+
+        const icon =
+            btn.querySelector("i");
+
+
+        btn.addEventListener("click", () => {
+
+            menu.classList.toggle("hidden");
+
+
+            if (menu.classList.contains("hidden")) {
+
+                icon.classList.remove("fa-times");
+
+                icon.classList.add("fa-bars");
+
+            } else {
+
+                icon.classList.remove("fa-bars");
+
+                icon.classList.add("fa-times");
+
+            }
+
+        });
+
+
+        /* MOBİL MENÜ LİNKLERİ */
+
+        mobileLinks.forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                menu.classList.add("hidden");
+
+                icon.classList.remove("fa-times");
+
+                icon.classList.add("fa-bars");
+
+            });
+
+        });
+
+
+        /* İLETİŞİM FORMU */
+
+        const form =
+            document.getElementById("contact-form");
+
+
+        form.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+
+            const name =
+                document.getElementById("name").value.trim();
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const subject =
+                document.getElementById("subject").value.trim();
+
+            const message =
+                document.getElementById("message").value.trim();
+
+
+            const mailSubject =
+                encodeURIComponent(subject);
+
+
+            const mailBody =
+                encodeURIComponent(
+                    "Ad Soyad: " +
+                    name +
+                    "\nE-posta: " +
+                    email +
+                    "\n\nMesaj:\n" +
+                    message
+                );
+
+
+            const success =
+                document.getElementById("success-message");
+
+
+            success.classList.remove("hidden");
+
+            success.classList.add("flex");
+
+
+            /* E-POSTA UYGULAMASINI AÇ */
+
+            window.location.href =
+                "mailto:mustafaada3458@gmail.com" +
+                "?subject=" +
+                mailSubject +
+                "&body=" +
+                mailBody;
+
+
+            /* FORMU TEMİZLE */
+
+            form.reset();
+
+
+            /* MESAJI 5 SANİYE SONRA GİZLE */
+
+            setTimeout(() => {
+
+                success.classList.add("hidden");
+
+                success.classList.remove("flex");
+
+            }, 5000);
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
